@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Articulo utilizando HTML/CSS</h1>
+      <h2>
+        El propósito de este articulo es investigar y profundizar en el tema de
+        las variables y los bucles en JavaScript, aplicar esta información para
+        crear un artículo informativo utilizando HTML y CSS.
+      </h2>
+      <img src="htmlandcss.png" alt="HTML and CSS Logos" />
+      <p>
+        En el panorama actual del desarrollo web, HTML, CSS y JavaScript son
+        pilares fundamentales que forman la base de la mayoría de los sitios y
+        aplicaciones web. HTML (HyperText Markup Language) se encarga de la
+        estructura y el contenido de una página web, CSS (Cascading Style
+        Sheets) define su presentación y apariencia visual, y JavaScript
+        proporciona la interactividad y la funcionalidad dinámica. La
+        combinación de estos tres lenguajes permite a los desarrolladores crear
+        experiencias web ricas y dinámicas que se adaptan a las necesidades y
+        expectativas de los usuarios.
+      </p>
+    </div>
+    <div class="index-container">
+      <h3>Índice</h3>
+      <ul>
+        <li><a href="#section-1">1. Variables en JavaScript</a></li>
+        <ul>
+          <li><a href="#section-1.1">1.1 Declaración de Variables</a></li>
+          <li><a href="#section-1.2">1.2 Tipos de Datos</a></li>
+          <ul>
+            <li><a href="#section-1.2.1">1.2.1 Tipos Primitivos</a></li>
+            <li><a href="#section-1.2.2">1.2.2 Objetos</a></li>
+          </ul>
+          <li><a href="#section-1.3">1.3 Alcance de las Variables</a></li>
+          <ul>
+            <li><a href="#section-1.3.1">1.3.1 Variables Globales</a></li>
+            <li><a href="#section-1.3.2">1.3.2 Variables Locales</a></li>
+            <li><a href="#section-1.3.3">1.3.3 Variables de Bloque</a></li>
+          </ul>
+          <li><a href="#section-1.4">1.4 Constantes</a></li>
+          <li>
+            <a href="#section-1.5">1.5 Diferencias entre let, const y var</a>
+          </li>
+          <li><a href="#section-1.6">1.6 Uso de Variables en Práctica</a></li>
+        </ul>
+        <li><a href="#section-2">2. Ciclos en JavaScript</a></li>
+        <ul>
+          <li><a href="#section-2.1">2.1 for Loop</a></li>
+          <ul>
+            <li>
+              <a href="#section-2.1.1">2.1.1 Sintaxis y Funcionamiento</a>
+            </li>
+            <li><a href="#section-2.1.2">2.1.2 Ejemplos de Uso</a></li>
+          </ul>
+          <li><a href="#section-2.2">2.2 while Loop</a></li>
+          <ul>
+            <li>
+              <a href="#section-2.2.1">2.2.1 Sintaxis y Funcionamiento</a>
+            </li>
+            <li><a href="#section-2.2.2">2.2.2 Ejemplos de Uso</a></li>
+          </ul>
+          <li><a href="#section-2.3">2.3 do...while Loop</a></li>
+          <ul>
+            <li>
+              <a href="#section-2.3.1">2.3.1 Sintaxis y Funcionamiento</a>
+            </li>
+            <li><a href="#section-2.3.2">2.3.2 Ejemplos de Uso</a></li>
+          </ul>
+          <li><a href="#section-2.4">2.4 for...in Loop</a></li>
+          <ul>
+            <li>
+              <a href="#section-2.4.1">2.4.1 Sintaxis y Funcionamiento</a>
+            </li>
+            <li><a href="#section-2.4.2">2.4.2 Ejemplos de Uso</a></li>
+          </ul>
+          <li><a href="#section-2.5">2.5 for...of Loop</a></li>
+          <ul>
+            <li>
+              <a href="#section-2.5.1">2.5.1 Sintaxis y Funcionamiento</a>
+            </li>
+            <li><a href="#section-2.5.2">2.5.2 Ejemplos de Uso</a></li>
+          </ul>
+          <li><a href="#section-2.6">2.6 switch Statement</a></li>
+          <ul>
+            <li>
+              <a href="#section-2.6.1">2.6.1 Sintaxis y Funcionamiento</a>
+            </li>
+            <li><a href="#section-2.6.2">2.6.2 Ejemplos de Uso</a></li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="additional-sections">
+      <div id="section-1" class="section">
+        <h3>1. Variables en JavaScript</h3>
+        <p>
+          Las variables en JavaScript son contenedores para almacenar datos. Se
+          pueden declarar utilizando las palabras clave let, const y var. A
+          continuación, se detallan los aspectos fundamentales de las variables
+          en JavaScript:
+        </p>
+        <div id="section-1.1" class="subsection">
+          <h4>1.1 Declaración de Variables</h4>
+          <p>
+            Las variables se declaran utilizando las palabras clave let, const y
+            var.
+            <br />
+            <br />
+            Por ejemplo:
+          </p>
+          <code>
+            <ul>
+              <li>const nombre = "Juan"</li>
+              <li>let edad = 30;</li>
+              <li>var salario = 3000</li>
+            </ul>
+          </code>
+        </div>
+        <div id="section-1.2" class="subsection">
+          <h4>1.2 Tipos de Datos</h4>
+          <div id="section-1.2.1" class="sub-subsection">
+            <h5>1.2.1 Tipos Primitivos</h5>
+            <p>
+              Los tipos primitivos incluyen números, cadenas, booleanos, null y
+              undefined.
+            </p>
+          </div>
+          <div id="section-1.2.2" class="sub-subsection">
+            <h5>1.2.2 Objetos</h5>
+            <p>
+              Los objetos son estructuras de datos complejas que pueden contener
+              múltiples valores.
+            </p>
+          </div>
+        </div>
+        <div id="section-1.3" class="subsection">
+          <h4>1.3 Alcance de las Variables</h4>
+          <div id="section-1.3.1" class="sub-subsection">
+            <h5>1.3.1 Variables Globales</h5>
+            <p>
+              Las variables globales son accesibles desde cualquier parte del
+              código.
+            </p>
+          </div>
+          <div id="section-1.3.2" class="sub-subsection">
+            <h5>1.3.2 Variables Locales</h5>
+            <p>
+              Las variables locales solo son accesibles dentro de la función en
+              la que se declaran.
+            </p>
+          </div>
+          <div id="section-1.3.3" class="sub-subsection">
+            <h5>1.3.3 Variables de Bloque</h5>
+            <p>
+              Las variables de bloque solo son accesibles dentro del bloque en
+              el que se declaran (por ejemplo, dentro de un if o un bucle for).
+            </p>
+          </div>
+        </div>
+        <div id="section-1.4" class="subsection">
+          <h4>1.4 Constantes</h4>
+          <p>
+            Las constantes se declaran utilizando la palabra clave const y no
+            pueden ser reasignadas.
+          </p>
+        </div>
+        <div id="section-1.5" class="subsection">
+          <h4>1.5 Diferencias entre let, const y var</h4>
+          <ul>
+            <li>
+              let: Se utiliza para declarar variables que pueden ser reasignadas
+              y tienen un alcance de bloque.
+            </li>
+            <li>
+              const: Se utiliza para declarar variables cuyo valor no cambiará
+              durante la ejecución del programa y también tienen un alcance de
+              bloque.
+            </li>
+            <li>
+              var: Fue la forma original de declarar variables en JavaScript,
+              tiene un alcance de función o global y puede ser accesible fuera
+              del bloque en el que se declara.
+            </li>
+          </ul>
+        </div>
+        <div id="section-1.6" class="subsection">
+          <h4>1.6 Uso de Variables en Práctica</h4>
+          <p>
+            Podemos utilizar variables para almacenar y manipular datos en
+            aplicaciones web
+          </p>
+          <p>
+            Un buen ejemplo de esto puede ser crear una variable total en donde
+            multiplicamos los valores que se tienen en precio y cantidad para
+            luego imprimir esta variable en un console.log
+          </p>
+        </div>
+      </div>
+  <div id="section-2" class="section">
+    <h3>2. Ciclos en JavaScript</h3>
+    <p>
+      Los ciclos en JavaScript permiten la repetición controlada de bloques
+      de código. A continuación, se detallan los diferentes tipos de ciclos
+      disponibles en JavaScript:
+    </p>
+    <div id="section-2.1" class="subsection">
+      <h4>2.1 for Loop</h4>
+      <div id="section-2.1.1" class="sub-subsection">
+        <h5>2.1.1 Sintaxis y Funcionamiento</h5>
+        <p>
+          El bucle <code>for</code> en JavaScript se utiliza para repetir una
+          porción de código varias veces.
+        </p>
+        <p>
+          Sintaxis:
+          <pre><code>for (inicialización; condición; incremento) {
+  // Código a ejecutar
+}</code></pre>
+        </p>
+        <p>
+          Funcionamiento:
+          <ul>
+            <li>La inicialización se ejecuta una vez antes de que comience el
+              bucle.</li>
+            <li>La condición es evaluada en cada iteración. Si la condición
+              es verdadera, el bucle continúa. Si es falsa, el bucle se
+              detiene.</li>
+            <li>El incremento se ejecuta después de que el bloque de código
+              se haya ejecutado en cada iteración.</li>
+          </ul>
+        </p>
+      </div>
+      <div id="section-2.1.2" class="sub-subsection">
+        <h5>2.1.2 Ejemplos de Uso</h5>
+        <p>
+          Ejemplo de un bucle <code>for</code> que imprime los números del 1
+          al 5:
+          <pre><code>for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}</code></pre>
+        </p>
+      </div>
+    </div>
+    <div id="section-2.2" class="subsection">
+      <h4>2.2 while Loop</h4>
+      <div id="section-2.2.1" class="sub-subsection">
+        <h5>2.2.1 Sintaxis y Funcionamiento</h5>
+        <p>
+          El bucle <code>while</code> ejecuta una sentencia mientras una
+          condición sea verdadera.
+        </p>
+        <p>
+          Sintaxis:
+          <pre><code>while (condición) {
+  // Código a ejecutar
+}</code></pre>
+        </p>
+        <p>
+          Funcionamiento:
+          <ul>
+            <li>La condición se evalúa antes de que el bloque de código sea
+              ejecutado.</li>
+            <li>Si la condición es verdadera, el bloque de código se
+              ejecuta. Si es falsa, el bucle se detiene.</li>
+          </ul>
+        </p>
+      </div>
+      <div id="section-2.2.2" class="sub-subsection">
+        <h5>2.2.2 Ejemplos de Uso</h5>
+        <p>
+          Ejemplo de un bucle <code>while</code> que imprime los números del 1
+          al 5:
+          <pre><code>let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}</code></pre>
+        </p>
+      </div>
+    </div>
+    <div id="section-2.3" class="subsection">
+      <h4>2.3 do...while Loop</h4>
+      <div id="section-2.3.1" class="sub-subsection">
+        <h5>2.3.1 Sintaxis y Funcionamiento</h5>
+        <p>
+          El bucle <code>do...while</code> es similar al bucle
+          <code>while</code>, pero la condición se evalúa después de que el
+          bloque de código se ha ejecutado, lo que garantiza que el bloque se
+          ejecuta al menos una vez.
+        </p>
+        <p>
+          Sintaxis:
+          <pre><code>do {
+  // Código a ejecutar
+} while (condición);</code></pre>
+        </p>
+      </div>
+      <div id="section-2.3.2" class="sub-subsection">
+        <h5>2.3.2 Ejemplos de Uso</h5>
+        <p>
+          Ejemplo de un bucle <code>do...while</code> que imprime los números
+          del 1 al 5:
+          <pre><code>let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);</code></pre>
+        </p>
+      </div>
+    </div>
+    <div id="section-2.4" class="subsection">
+      <h4>2.4 for...in Loop</h4>
+      <div id="section-2.4.1" class="sub-subsection">
+        <h5>2.4.1 Sintaxis y Funcionamiento</h5>
+        <p>
+          El bucle <code>for...in</code> se utiliza para iterar sobre todas
+          las propiedades de un objeto enumerable.
+        </p>
+        <p>
+          Sintaxis:
+          <pre><code>for (variable in objeto) {
+  // Código a ejecutar
+}</code></pre>
+        </p>
+      </div>
+      <div id="section-2.4.2" class="sub-subsection">
+        <h5>2.4.2 Ejemplos de Uso</h5>
+        <p>
+          Ejemplo de un bucle <code>for...in</code> que itera sobre las
+          propiedades de un objeto:
+          <pre><code>const persona = {
+  nombre: 'Juan',
+  edad: 30,
+  ciudad: 'Madrid'
+};
+
+for (let propiedad in persona) {
+  console.log(propiedad + ': ' + persona[propiedad]);
+}</code></pre>
+        </p>
+      </div>
+    </div>
+    <div id="section-2.5" class="subsection">
+      <h4>2.5 for...of Loop</h4>
+      <div id="section-2.5.1" class="sub-subsection">
+        <h5>2.5.1 Sintaxis y Funcionamiento</h5>
+        <p>
+          El bucle <code>for...of</code> se utiliza para iterar sobre los
+          valores de un objeto iterable (como Arrays, Strings, Mapas, Sets,
+          etc.).
+        </p>
+        <p>
+          Sintaxis:
+          <pre><code>for (variable of iterable) {
+  // Código a ejecutar
+}</code></pre>
+        </p>
+      </div>
+      <div id="section-2.5.2" class="sub-subsection">
+        <h5>2.5.2 Ejemplos de Uso</h5>
+        <p>
+          Ejemplo de un bucle <code>for...of</code> que itera sobre los
+          elementos de un Array:
+          <pre><code>const numeros = [1, 2, 3, 4, 5];
+
+for (let numero of numeros) {
+  console.log(numero);
+}</code></pre>
+        </p>
+      </div>
+    </div>
+    <div id="section-2.6" class="subsection">
+      <h4>2.6 switch Statement</h4>
+      <div id="section-2.6.1" class="sub-subsection">
+        <h5>2.6.1 Sintaxis y Funcionamiento</h5>
+        <p>
+          La declaración <code>switch</code> evalúa una expresión, comparando
+          el valor de esa expresión con las instancias <code>case</code>, y
+          ejecuta declaraciones asociadas a un caso.
+        </p>
+        <p>
+          Sintaxis:
+          <pre><code>switch (expresion) {
+  case valor1:
+    // Código a ejecutar
+    break;
+  case valor2:
+    // Código a ejecutar
+    break;
+  default:
+    // Código a ejecutar si no coincide ningún caso
+}</code></pre>
+        </p>
+      </div>
+      <div id="section-2.6.2" class="sub-subsection">
+        <h5>2.6.2 Ejemplos de Uso</h5>
+        <p>
+          Ejemplo de una declaración <code>switch</code> que muestra un mensaje
+          dependiendo del día de la semana:
+          <pre><code>const dia = 'Lunes';
+
+switch (dia) {
+  case 'Lunes':
+  case 'Martes':
+  case 'Miércoles':
+  case 'Jueves':
+  case 'Viernes':
+    console.log('Día laboral');
+    break;
+  case 'Sábado':
+  case 'Domingo':
+    console.log('Fin de semana');
+    break;
+  default:
+    console.log('Día no válido');
+}</code></pre>
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+  </body>
+</html>
